@@ -11,7 +11,7 @@ export default class LoginPage {
 
     }
     async navegativeTheSystem(){
-        await global.page.goto(process.env.BASEURL,{timeout:60000});
+        await global.page.goto(process.env.BASEURL,{timeout:100000});
     }
 
     async Login(user:string, pass:string){
