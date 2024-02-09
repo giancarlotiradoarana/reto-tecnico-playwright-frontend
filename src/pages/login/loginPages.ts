@@ -16,9 +16,9 @@ export default class LoginPage {
 
     async Login(user:string, pass:string){
         await global.page.waitForTimeout(1000);
-        await global.page.type(this.Elements.userInput, user),{timeout:90000};
+        await global.page.type(this.Elements.userInput, user),{timeout:100000};
         await global.page.waitForTimeout(1000);
-        await global.page.type(this.Elements.passInput, pass),{timeout:90000};
+        await global.page.type(this.Elements.passInput, pass),{timeout:100000};
         await global.page.waitForTimeout(1000);
         await global.page.click(this.Elements.loginBtn);
         await global.page.waitForTimeout(1000);
