@@ -1,26 +1,19 @@
 import { Given, Then, When } from "@cucumber/cucumber";
 
-
 import ClientePage from "../../pages/cliente/clientePages";
 
 const cliente =new ClientePage();
 
-Given('que me encuentro en el Sistema de Ventas Roncal',async function() {
-    await cliente.navegativeTheSystem(); 
-     
+
+  When('ingreso los datos del cliente: tipoDoc {string}, numDoc {string}, nombre {string}, Apellido {string}, Depart.{string}, Ciudad {string}, Direcc. {string}, Telef. {string}, Email {string}', async function (typoDoc, numberDoc, nombre, apellido, departamento, ciudad, direccion, telefono,email) {
+      await cliente.addClient(typoDoc, numberDoc, nombre, apellido, departamento, ciudad, direccion, telefono,email);
 });
 
- When('ingreso las credenciales Usuario {string} y Clave {string}',async function (user,pass) {
-    await cliente.Login(user,pass);
-    
- });
+  When('guardo', async function () {
+       await cliente.save();
+  });
 
- Then('se muestra la pantalla de inicio del sistema',async function () {
-    await cliente.isVisiblePageHome();
-
- });
-When ('agrego nuevo cliente con los siguentes campos: Tipo Doc {string} ,Número de Doc {string}, Nombre {string}, Apellido {string},Departamento {string}, Provincia {string}, Distrito {string}, Dirección {string}, Telefono ,{string} Email {string}',async function (tipoDoc,numeroDocumento,nombre,apellido,departamento,provincia,distrito,direccion,telefono,email) {
-await cliente.addClient();
-    
-});
+  Then('confirmo al nuevo cliente', async function () {
+        await cliente.confirmClient();
+  });
 
