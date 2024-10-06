@@ -15,13 +15,13 @@ export default class LoginPage {
     }
 
     async Login(user:string, pass:string){
-        await global.page.waitForTimeout(1000);
-        await global.page.type(this.Elements.userInput, user),{timeout:100000};
-        await global.page.waitForTimeout(1000);
-        await global.page.type(this.Elements.passInput, pass),{timeout:100000};
-        await global.page.waitForTimeout(1000);
+        await global.page.waitForTimeout(500);
+        await global.page.type(this.Elements.userInput, user);
+        await global.page.waitForTimeout(500);
+        await global.page.type(this.Elements.passInput, pass);
+        await global.page.waitForTimeout(500);
         await global.page.click(this.Elements.loginBtn);
-        await global.page.waitForTimeout(1000);
+        await global.page.waitForTimeout(500);
     }
 
     async isVisiblePageHome(){

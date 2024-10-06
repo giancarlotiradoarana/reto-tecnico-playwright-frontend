@@ -25,7 +25,6 @@ export default class CategoriaPage {
         await global.page.type(this.Elements.nameCategoryInput,name);
         await global.page.waitForTimeout(900);
         await global.page.click(this.Elements.saveCategoryBtn);
-
     }
 
     async confirmCategory(){

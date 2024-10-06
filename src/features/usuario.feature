@@ -2,7 +2,7 @@
 Feature: Módulo de usuarios
 
   @esc001_happy_path_usuario
-Scenario: El usuario ingresa su usuario y password válido
+  Scenario: El usuario ingresa su usuario y password válido
     Given que me encuentro en el Sistema de Ventas Roncal
     When ingreso las credenciales Usuario "Administrador" y Clave "Administrador"
     Then se muestra la pantalla de inicio del sistema
@@ -13,3 +13,8 @@ Scenario: El usuario ingresa su usuario y password válido
     And doy click al detalle del usuario
     And click en la opción Atrás
     Then se muestra la pantalla de usuario
+
+
+
+
+    

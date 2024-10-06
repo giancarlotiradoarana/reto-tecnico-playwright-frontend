@@ -19,7 +19,7 @@ export default class UsuarioPages {
         listUserBtn:"//*[@id='navLateral']/div/nav/ul/li[5]/ul/li[2]/a/div[2]",
         imageDetailLbl:"//tbody/tr[1]/td[5]/a[1]/i[1]",
         goBackBtn:"//*[@id='pageContent']/div[3]/p/a",
-
+        
     }
 
     async selectOptionUser(){
