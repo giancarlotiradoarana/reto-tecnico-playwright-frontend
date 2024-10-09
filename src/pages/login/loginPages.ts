@@ -22,9 +22,9 @@ export default class LoginPage {
     async navegative(){
         if( await global.page.locator(this.Elements.ventasLbl).isVisible() || await global.page.locator(this.Elements.homeLbl).isVisible()){
             await global.page.waitForTimeout(500);
-           }
-    }
-
+          }
+        }
+   
     async Login(user:string, pass:string){
         await global.page.waitForTimeout(500);
         await global.page.type(this.Elements.userInput, user);
@@ -44,5 +44,5 @@ export default class LoginPage {
         await global.page.waitForTimeout(1000);
         await expect(global.page.locator(this.Elements.errorMsgLbl,errorMsg)).toBeVisible({timeout:90000});
     }
-
 }
+

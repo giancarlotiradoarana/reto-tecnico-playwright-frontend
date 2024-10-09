@@ -2,7 +2,7 @@
 Feature: Módulo de cliente
 
 @esc000_happy_path_Cliente
-  Scenario Outline: 
+  Scenario Outline: Registro de cliente, sin cerrar el sistema para volver a registrar nuevamente
     Given que me encuentro en el Sistema de Ventas Roncal
     When ingreso las credenciales Usuario "Administrador" y Clave "Administrador"
     Then se muestra la pantalla de inicio del sistema
