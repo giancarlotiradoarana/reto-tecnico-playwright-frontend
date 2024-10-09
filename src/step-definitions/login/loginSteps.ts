@@ -24,6 +24,9 @@ Given('que me encuentro en el Sistema de Ventas Roncal',async function() {
     
  });
 
+ Given('que me encuentro en la pagina Principal de sistema', async function () {
+    await login.navegativeTheSystem2(); 
+ });
 
 
 
