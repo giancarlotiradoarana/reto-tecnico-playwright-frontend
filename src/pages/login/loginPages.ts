@@ -9,13 +9,20 @@ export default class LoginPage {
         errorMsgLbl:"//body/div[1]/form[1]/article[1]/div[1]",
         textIsVisible:"//div[contains(text(),'Empresa Roncal-Chepén')]",
         textViewLbl:"//h5[contains(text(),'Inicia sesión con tu cuenta')]",
+        ventasLbl:"//*[@id='navLateral']/div/div[2]",
+        homeLbl:"//*[@id='pageContent']/div[2]/h1",
 
     }
     async navegativeTheSystem(){
         await global.page.goto(process.env.BASEURL,{timeout:100000});
         await expect(global.page.locator(this.Elements.textViewLbl)).toBeVisible({timeout:200000});
       
+    }
 
+    async navegative(){
+        if( await global.page.locator(this.Elements.ventasLbl).isVisible() || await global.page.locator(this.Elements.homeLbl).isVisible()){
+            await global.page.waitForTimeout(500);
+           }
     }
 
     async Login(user:string, pass:string){

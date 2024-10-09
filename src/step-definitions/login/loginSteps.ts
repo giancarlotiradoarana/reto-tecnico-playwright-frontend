@@ -9,6 +9,10 @@ Given('que me encuentro en el Sistema de Ventas Roncal',async function() {
      
 });
 
+Given('que me encuentro en la pagina Principal de sistema', async function () {
+   await login.navegative(); 
+});
+
  When('ingreso las credenciales Usuario {string} y Clave {string}',async function (user,pass) {
     await login.Login(user,pass);
     

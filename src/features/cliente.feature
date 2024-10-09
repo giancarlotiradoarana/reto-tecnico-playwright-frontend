@@ -1,11 +1,15 @@
 @Sistema_Ventas_Roncal
 Feature: Módulo de cliente
 
- @esc001_happy_path_Cliente
-  Scenario Outline: - El usuario ingresa al módulo de Cliente agrega un cliente todos los campos además de seleccionando los tipos de Documentos
+@esc000_happy_path_Cliente
+  Scenario Outline: 
     Given que me encuentro en el Sistema de Ventas Roncal
     When ingreso las credenciales Usuario "Administrador" y Clave "Administrador"
     Then se muestra la pantalla de inicio del sistema
+
+ @esc001_happy_path_Cliente
+  Scenario Outline: - El usuario ingresa al módulo de Cliente agrega un cliente todos los campos además de seleccionando los tipos de Documentos
+    Given que me encuentro en la pagina Principal de sistema 
     When ingreso los datos del cliente: tipoDoc "<tipoDoc>", numDoc "<numDoc>", nombre "<nombre>", Apellido "<Apellido>", Depart."<Depart.>", Ciudad "<Ciudad>", Direcc. "<Direcc.>", Telef. "<Telef.>", Email "<Email>"
     And guardo
     Then confirmo al nuevo cliente
