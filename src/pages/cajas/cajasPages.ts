@@ -9,6 +9,7 @@ export default class CajasPages {
        efectiveCajaInput:"//*[@id='pageContent']/div[3]/form/div/div[3]/div/input",
        saveBtn:"//*[@id='pageContent']/div[3]/form/p[1]/button[2]",
        confirmSaveBtn:"//button[contains(text(),'Si, realizar')]",
+       cajasLbl:"//*[@id='pageContent']/div[4]/h1",
 
     }
 

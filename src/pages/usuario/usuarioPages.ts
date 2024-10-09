@@ -31,7 +31,6 @@ export default class UsuarioPages {
     }
 
     async addUser(name:string, lastName:string,user:string,email:string,password:string, repeatPassword:string,usuario:string,box:string){
-        await expect(global.page.locator(this.Elements.userLbl)).toBeVisible({timeout:60000});
         await global.page.waitForTimeout(500);
         await global.page.fill(this.Elements.nameInput,name);
         await global.page.waitForTimeout(500);

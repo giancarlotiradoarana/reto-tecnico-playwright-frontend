@@ -7,11 +7,15 @@ export default class LoginPage {
         passInput:"//body/div[1]/form[1]/div[2]/div[1]/input[1]",
         loginBtn:"//button[contains(text(),'LOG IN')]",
         errorMsgLbl:"//body/div[1]/form[1]/article[1]/div[1]",
-        textIsVisible:"//div[contains(text(),'Empresa Roncal-Chepén')]"
+        textIsVisible:"//div[contains(text(),'Empresa Roncal-Chepén')]",
+        textViewLbl:"//h5[contains(text(),'Inicia sesión con tu cuenta')]",
 
     }
     async navegativeTheSystem(){
         await global.page.goto(process.env.BASEURL,{timeout:100000});
+        await expect(global.page.locator(this.Elements.textViewLbl)).toBeVisible({timeout:200000});
+      
+
     }
 
     async Login(user:string, pass:string){

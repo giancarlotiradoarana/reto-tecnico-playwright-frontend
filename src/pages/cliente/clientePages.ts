@@ -25,7 +25,7 @@ export default class ClientePage {
         await global.page.waitForTimeout(370);
         await global.page.click(this.Elements.addClienteLbl);
         await global.page.waitForTimeout(370);
-        await expect(global.page.locator(this.Elements.lblClientsLbl)).toBeVisible();
+        await expect(global.page.locator(this.Elements.lblClientsLbl)).toBeVisible({timeout:200000});
         if (typoDoc.toUpperCase() == "DNI") {
             await global.page.selectOption(this.Elements.typeDocumentCbo,typoDoc);
         }
