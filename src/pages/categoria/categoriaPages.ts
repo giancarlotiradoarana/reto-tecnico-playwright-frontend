@@ -12,7 +12,6 @@ export default class CategoriaPage {
         capturText1:"//h1[contains(text(),'Categorías')]",
         captureText2:"//body/main[1]/section[2]/div[1]/div[1]/nav[1]/ul[1]/li[2]/small[1]",
         categoryLbl: "//h1[contains(text(),'Categorías')]",
-
     }
 
     async addCategory(category:string, name:string){
