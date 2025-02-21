@@ -2,13 +2,13 @@
 Feature: Módulo de Login
 ######### MÓDULO DE LOGIN #####################
 
-@esc001_happy_path_login
+@esc000_happy_path_login
   Scenario: Caso Ok, El usuario ingresa su usuario y password válido
     Given que me encuentro en el Sistema de Ventas Roncal
     When ingreso las credenciales Usuario "Administrador" y Clave "Administrador"
     Then se muestra la pantalla de inicio del sistema
 
-  @esc002_unhappy_path_login
+  @esc001_unhappy_path_login
   Scenario Outline: Caso NO-OK Casos Fallidos por error de usuario y clave, no se puede ingresar al sistema
     Given que me encuentro en el Sistema de Ventas Roncal
     When ingreso las credenciales Usuario "<usuario>" y Clave "<clave>"

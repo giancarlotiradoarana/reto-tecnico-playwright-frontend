@@ -1,7 +1,7 @@
 @Sistema_Ventas_Roncal
 Feature: Módulo de Producto
 
-@esc000_happy_path_Producto
+@esc000_happy_path_login
   Scenario Outline: Registro de Producto, sin cerrar el sistema para volver a registrar nuevamente
     Given que me encuentro en el Sistema de Ventas Roncal
     When ingreso las credenciales Usuario "Administrador" y Clave "Administrador"

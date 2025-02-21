@@ -17,12 +17,8 @@ export default class VentaPage {
         amountsInput:"//*[@id='venta_abono']",
         saveAmountBtn:"//*[@id='pageContent']/div[3]/div/div[2]/form/p[1]/button",
         addProductBtn:"//*[@id='sale-barcode-form']/div/div[2]/div/a/button",
-
-
-
-       
-
-
+        downloadTicketBtn:"//*[@id='pageContent']/div[3]/div/div[1]/div[1]/div/div/div[1]/button[1]",
+        downloadFactureBtn:"//*[@id='pageContent']/div[3]/div/div[1]/div[1]/div/div/div[2]/button",
     }
 
     async selectSale(){
@@ -91,6 +87,9 @@ export default class VentaPage {
 
     }
 
-
+    async clickTypeDocSale(typeDocSale:string){
+        await global.page.waitForTimeout(3000);
+        
+    }
 }
 

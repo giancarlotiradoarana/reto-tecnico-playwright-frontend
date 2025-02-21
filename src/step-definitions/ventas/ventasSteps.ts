@@ -47,3 +47,7 @@ When('confirmo para agregar al cliente', async function () {
     await venta.saveAmount();
 
  });
+
+ When('se muestra el tipo Documento {string}', async function (typeDocSale) {
+    await venta.clickTypeDocSale(typeDocSale);
+ });
