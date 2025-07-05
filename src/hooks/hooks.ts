@@ -7,7 +7,7 @@ const { chromium, firefox, webkit } = require('@playwright/test')
 
 setDefaultTimeout(270000);
 //condición para ejecución con 1 solo login
-global.executionWith1Login = true;
+global.executionWith1Login = false;
 //condición para ejecución con Chrome
 global.executionWithChrome = true;
 
