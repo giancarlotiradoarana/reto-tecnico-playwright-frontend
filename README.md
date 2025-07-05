@@ -17,6 +17,8 @@ Automatizar los siguientes flujos como cliente de Sauce Demo:
 - [Cucumber.js](https://github.com/cucumber/cucumber-js)
 - [TypeScript](https://www.typescriptlang.org/)
 - Page Object Model (POM)
+- Git
+- GitHub
 ---
 
 ## ⚙️ Pasos Previos:
