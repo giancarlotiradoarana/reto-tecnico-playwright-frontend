@@ -132,8 +132,9 @@ Proporciona resaltado de sintaxis, autocompletado y soporte para archivos .featu
 
 ## 🧪 Ejecutar los casos prueba:
 
+Para poder ejecutar los casos de pruebas, se tiene que abrir una terminal y ejecutar los Tags que comiencen con el signo @
 
-Se debe ejecutar el caso de prueba que comienzan con el signo @
+A continuación se detallan algunos ejemplos de los comando con el Tag de caso en particular.
 
 EJEMPLOS:
 
@@ -160,7 +161,7 @@ npm run cucumber-report
 
 Se  genera una RUTA como el siguente ejemplo: C:\Users\User\Documents\reto-front-end\reto-frontend-playwright\test-results\reports\index.html
 
-Copiar la ruta y pegarlo en la URL de cualquier navegador, con ello se mostrará el reporte.
+Copiar la ruta y pegarlo en la URL de cualquier navegador, con ello se mostrará el reporte más detallado.
 ## Informe sobre la estrategia de automatización y patrones utilizados.
 
 El informe se encuentra en el proyecto, en la siguente Ruta:

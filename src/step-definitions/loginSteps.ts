@@ -8,12 +8,12 @@ Given('el usuario está en la página de inicio de sesion', async function () {
   await loginPage.navigate();
 });
 
- When('el usuario ingresa el usuario y la contraseña', async function () {
+ When('el usuario ingresa credenciales válidas', async function () {
    await loginPage.enterCredentials();
    
  });
 
-  When('el usuario bloqueado  intenta iniciar sesión con las credenciales', async function () {
+  When('el usuario bloqueado intenta iniciar sesión', async function () {
    await loginPage.enterLockedCredentials();
    
  });

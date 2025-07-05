@@ -5,10 +5,10 @@ export default class LoginPage {
         userNameInput:"//*[@id='user-name']",
         passwordInput:"//*[@id='password']",
         loginInput:"//*[@id='login-button']",
-        textProductLbl:"//div[contains(text(),'Products')]",
+        productLbl:"//div[contains(text(),'Products')]",
         msgBlockedLbl:"//h3[@data-test='error']",
-
     }
+
     async navigate(){
         await global.page.goto(process.env.BASEURL,{timeout:6000});  
     }
@@ -32,7 +32,7 @@ export default class LoginPage {
     }
 
     async validateLoginSuccess(textProduct:string){
-        await expect(global.page.locator(this.Elements.textProductLbl,textProduct)).toBeVisible({timeout:6000});
+        await expect(global.page.locator(this.Elements.productLbl,textProduct)).toBeVisible({timeout:6000});
          //Estoy utilizando un pequeño tiempo para ver el texto "Products" en la otra página de Products
         await global.page.waitForTimeout(1000);
     }
