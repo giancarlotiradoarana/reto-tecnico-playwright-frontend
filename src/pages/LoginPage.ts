@@ -5,7 +5,7 @@ export default class LoginPage {
         userNameInput:"//*[@id='user-name']",
         passwordInput:"//*[@id='password']",
         loginInput:"//*[@id='login-button']",
-        productLbl:"//div[contains(text(),'Products')]",
+        productLbl:"//span[contains(text(),'Products')]",
         msgBlockedLbl:"//h3[@data-test='error']",
     }
 
@@ -15,14 +15,14 @@ export default class LoginPage {
     
     async enterCredentials(){
         await global.page.fill(this.Elements.userNameInput, process.env.SAUCE_USERNAME);
-        //Estoy utilizando un pequeño tiempo para ver como se ingresa las credenciales
+        //Estoy utilizando un pequeño tiempo ADICIONAL para ver como se ingresa las credenciales
         await global.page.waitForTimeout(1000);
         await global.page.fill(this.Elements.passwordInput, process.env.SAUCE_PASSWORD);
     }
 
     async enterLockedCredentials(){
         await global.page.fill(this.Elements.userNameInput, process.env.SAUCE_BLOCKED_USER);
-        //Estoy utilizando un pequeño tiempo para ver como se ingresa las credenciales
+        //Estoy utilizando un pequeño tiempo ADICIONAL para ver como se ingresa las credenciales
         await global.page.waitForTimeout(1000);
         await global.page.fill(this.Elements.passwordInput, process.env.SAUCE_PASSWORD);
     }
@@ -33,13 +33,13 @@ export default class LoginPage {
 
     async validateLoginSuccess(textProduct:string){
         await expect(global.page.locator(this.Elements.productLbl,textProduct)).toBeVisible({timeout:6000});
-         //Estoy utilizando un pequeño tiempo para ver el texto "Products" en la otra página de Products
-        await global.page.waitForTimeout(1000);
+         //Estoy utilizando un pequeño tiempo ADICIONAL para ver el texto "Products" en la otra página de Products
+        await global.page.waitForTimeout(200);
     }
 
     async validateLoginError(){
         await expect(global.page.locator(this.Elements.msgBlockedLbl)).toBeVisible({timeout:6000});
-         //Estoy utilizando un pequeño tiempo para ver el mensaje de Error
+         //Estoy utilizando un pequeño tiempo ADICIONAL para ver el mensaje de Error
         await global.page.waitForTimeout(1000);
     }
     

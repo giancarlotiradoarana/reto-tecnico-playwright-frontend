@@ -28,6 +28,6 @@ export default class ProductsPage {
        await global.page.click(this.Elements.cartIconBtn);
        await expect(global.page.locator(this.Elements.youCartLbl)).toBeHidden({timeout:6000});
        //Se agrega un pequeño tiempo ADICIONAL de espera para validar la lista de los productos en el carrito
-       await global.page.waitForTimeout(5000);
+       await global.page.waitForTimeout(500);
    }
 }

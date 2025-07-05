@@ -3,7 +3,6 @@ export default class CartPage {
 
     private Elements ={
         productInCartLbl:"//div[@class='inventory_item_name' and text()='{productInCart}']",
-
     }
 
     async validateProductInCart(product: string){
@@ -11,7 +10,6 @@ export default class CartPage {
        const text = await locator.textContent();
        await expect(locator).toHaveText(product);
        await global.page.waitForTimeout(300);
-
     }
 
 }
