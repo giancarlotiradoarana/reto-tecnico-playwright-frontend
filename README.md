@@ -127,6 +127,7 @@ Proporciona resaltado de sintaxis, autocompletado y soporte para archivos .featu
 📄 package-lock.json              # Archivo de bloqueo de dependencias generado por npm
 📄 package.json                   # Archivo principal de configuración del proyecto (scripts, dependencias, etc.)
 📄 README.md                      # Documentación principal del proyecto
+📄 STRATEGY.md                    # Informe técnico sobre la estrategia de automatización, patrones aplicados y convenciones
 📄 tsconfig.json                  # Configuración del compilador TypeScript
 
 ```
