@@ -55,7 +55,7 @@ Ya con esto es suficiente para poder clonar el proyecto.
 git init
  ```
  ```bash  
-git clone https://github.com/giancarlotiradoarana/reto-frontend-playwright.git
+git clone https://github.com/giancarlotiradoarana/reto-tecnico-playwright-frontend.git
  ```
 ---
 
