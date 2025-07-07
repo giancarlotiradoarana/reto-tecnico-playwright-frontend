@@ -176,3 +176,12 @@ El informe se encuentra en el proyecto, en la siguente Ruta:
 - Se colocó en un archivo separado para evitar sobrecargar el README.md y seguir buenas prácticas de organización y mantenimiento de documentación técnica.
 
 Para ver la estrategia de automatización y patrones utilizados, consulta el archivo: ==>  [STRATEGY.md](./STRATEGY.md)
+
+---
+# DEMOSTRACIÓN DEL PROYECTO EN VIDEO
+
+Puedes ver la demostración del proyecto en el siguiente enlace:
+
+📹 [Ver video en Google Drive](https://drive.google.com/drive/folders/1wzM0drAp-5DE5Ksu2uTBYcvXTGDaaz95?usp=sharing)
+
+---
