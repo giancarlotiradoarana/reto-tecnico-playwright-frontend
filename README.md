@@ -48,7 +48,7 @@ Ya con esto es suficiente para poder clonar el proyecto.
 
 1. Crear una carpeta con un nombre referente al proyecto pero de preferencia en Documentos: C:\Users\User\Documents
 
-2. Un vez creada la carpeta, hacer click derecho en esta opción:  Open Git Bash Here
+2. Un vez creada la carpeta, hacer click derecho en esta opción:  Open Git Bash Here 
 
 3. Ingresar estos comandos para clonar el repositorio.
 ```bash  
