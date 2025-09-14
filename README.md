@@ -141,14 +141,14 @@ A continuación se detallan algunos ejemplos de los comando con el Tag de caso e
 
 EJEMPLOS:
 
-- npm run test-uat --tags="@esc001_happy_path_login"
-- npm run test-uat --tags="@esc002_unhappy_path_login"
-- npm run test-uat --tags="@esc003_happy_path_agregar_producto"
-- npm run test-uat --tags="@esc004_happy_path_ver_carrito"
-- npm run test-uat --tags="@esc005_happy_path_completar_compra"
+- npm run cucumber-test-uat --tags="@esc001_happy_path_login"
+- npm run cucumber-test-uat --tags="@esc002_unhappy_path_login"
+- npm run cucumber-test-uat --tags="@esc003_happy_path_agregar_producto"
+- npm run cucumber-test-uat --tags="@esc004_happy_path_ver_carrito"
+- npm run cucumber-test-uat --tags="@esc005_happy_path_completar_compra"
 
 ```bash  
-npm run test-uat --tags="Aqui se agrega el Tags correspondiente"
+npm run cucumber-test-uat --tags="Aqui se agrega el Tags correspondiente"
  ```
 ---
 
@@ -162,9 +162,7 @@ npm run cucumber-report
  ```
 ---
 
-Se  genera una RUTA como el siguente ejemplo: C:\Users\User\Documents\reto-front-end\reto-frontend-playwright\test-results\reports\index.html
 
-Copiar la ruta y pegarlo en la URL de cualquier navegador, con ello se mostrará el reporte más detallado.
 ## Informe sobre la estrategia de automatización y patrones utilizados.
 
 El informe se encuentra en el proyecto, en la siguente Ruta:
@@ -176,17 +174,5 @@ El informe se encuentra en el proyecto, en la siguente Ruta:
 - Se colocó en un archivo separado para evitar sobrecargar el README.md y seguir buenas prácticas de organización y mantenimiento de documentación técnica.
 
 Para ver la estrategia de automatización y patrones utilizados, consulta el archivo: ==>  [STRATEGY.md](./STRATEGY.md)
-
----
-# DEMOSTRACIÓN DEL PROYECTO EN VIDEO
-
-En este video se muestra:
-- La ejecución de las pruebas automatizadas
-- La estructura del proyecto
-- Explicación de la estrategia y herramientas utilizadas
-
-Puedes ver la demostración del proyecto en el siguiente enlace:
-
-📹 [VER VIDEO EN GOOGLE DRIVE](https://drive.google.com/drive/folders/1wzM0drAp-5DE5Ksu2uTBYcvXTGDaaz95?usp=sharing)
 
 ---

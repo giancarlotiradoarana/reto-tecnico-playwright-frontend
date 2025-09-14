@@ -3,7 +3,7 @@ const assert = require("assert");
 const file = require("fs");
 const https = require("https");
 
-const jiraUrl = 'https://jira.agile.bns';
+const jiraUrl = 'Aqui agregar la URL principal';
 const apiXrayImportCucumberResult = 'rest/raven/1.0/import/execution/cucumber';
 const cucumberJsonFile = 'reports/cucumber-report.json';
 const jiraUser = process.env.npm_config_jira_user || "usuario";

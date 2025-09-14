@@ -11,5 +11,4 @@ export default class CartPage {
        await expect(locator).toHaveText(product);
        await global.page.waitForTimeout(300);
     }
-
 }

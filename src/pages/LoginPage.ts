@@ -42,5 +42,4 @@ export default class LoginPage {
          //Estoy utilizando un pequeño tiempo ADICIONAL para ver el mensaje de Error
         await global.page.waitForTimeout(1000);
     }
-    
 }

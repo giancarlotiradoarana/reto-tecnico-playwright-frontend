@@ -32,3 +32,4 @@ Given('el usuario está en la página de inicio de sesion', async function () {
    await loginPage.validateLoginError();
    
  });
+ 

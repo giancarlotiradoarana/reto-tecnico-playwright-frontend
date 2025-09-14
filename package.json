@@ -11,7 +11,6 @@
     "import-xray-results": "node src/helper/integrations/jiraXrayIntegration.ts",
     "import-confluence-results-dev": "cross-env ENV=dev ts-node src/helper/integrations/confluenceIntegration.ts",
     "import-confluence-results-uat": "cross-env ENV=uat ts-node src/helper/integrations/confluenceIntegration.ts"
-
   },
   "keywords": [],
   "author": "",
@@ -26,7 +25,8 @@
     "ts-node": "^10.9.2"
   },
   "dependencies": {
-    "playwright": "^1.53.2",
+    "playwright": "^1.55.0",
     "typescript": "^5.3.3"
   }
 }
+

@@ -27,4 +27,4 @@ Además, se incluyeron:
 
 - Separación clara entre definiciones de pasos (steps), archivos de funcionalidades (features) y lógica de página (pages)
 
-Esta estrategia garantiza una base sólida para la automatización de pruebas funcionales y permite una fácil extensión en futuros escenarios o regresiones.
+Esta estrategia garantiza una base sólida para la automatización de pruebas funcionales y permite una fácil extensión en futuros escenarios o regresiones

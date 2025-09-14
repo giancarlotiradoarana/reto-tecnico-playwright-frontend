@@ -7,7 +7,6 @@ const loginPage = new LoginPage();
 const productsPage = new ProductsPage();
 const cartPage = new CartPage();
 
-
 When('agrega el producto {string} al carrito', async function (product: string) {
   await productsPage.addProductToCart(product);
 

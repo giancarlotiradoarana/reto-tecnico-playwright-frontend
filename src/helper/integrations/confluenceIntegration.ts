@@ -22,7 +22,7 @@ async function addConfluenceAttachment() {
 
     fs.renameSync(oldName, newName)
 
-    const confluenceUrl = 'https://confluence.agile.bns';
+    const confluenceUrl = 'Aqui agregarbla URL principal';
     const confluencePage = process.env.CONFLUENCE_PAGE;
     const apiConfluenceAddAttachment = 'rest/api/content/'+ confluencePage + '/child/attachmnet';
     const fileToAttach = newName;
