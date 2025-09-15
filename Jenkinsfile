@@ -32,7 +32,7 @@ pipeline {
                         }
                         else {
                             echo "Executing tag: ${params.SCENARIO_TAG}"
-                            bat "npm run cucumber-test-${params.ENV} -- --tags="${params.SCENARIO_TAG}""
+                            bat "npm run cucumber-test-${params.ENV} -- --tags=""${params.SCENARIO_TAG}"
                         }
 
                     } finally{
