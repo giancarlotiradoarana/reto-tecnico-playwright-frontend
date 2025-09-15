@@ -34,6 +34,7 @@ pipeline {
                             echo "Executing tag: ${params.SCENARIO_TAG}"
                             bat "npm run cucumber-test-${params.ENV} .filter.tags=${params.SCENARIO_TAG}"
                         }
+                        
                     } finally{
                         publishReport();
                     }
