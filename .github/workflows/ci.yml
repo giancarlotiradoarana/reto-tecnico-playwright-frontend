@@ -32,7 +32,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: 🚀 Ejecutar pruebas con etiqueta dinámica
-        run: npm run test-uat -- --tags="${{ github.event.inputs.tag }}"
+        run: npm run cucumber-test-uat -- --tags="${{ github.event.inputs.tag }}"
 
       - name: 📊 Subir reporte HTML
         uses: actions/upload-artifact@v4
