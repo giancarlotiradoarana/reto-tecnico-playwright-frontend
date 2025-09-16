@@ -38,7 +38,11 @@ pipeline {
                         }
 
                     } finally{
-                        bat 'rename test-results\\reports\\cucumber-report.html index.html'
+                        if(isUnix()){
+                             sh "npm run cucumber-report:ci"
+                          } else {
+                              bat "npm run cucumber-report:ci"
+                          }
                         publishReport();
                     }
                 }
@@ -51,7 +55,7 @@ pipeline {
         publishHTML(target: [
             reportName: 'Playwright Report',
             reportDir: 'test-results/reports',
-            reportFiles: 'index.html',
+            reportFiles: 'cucumber-report.html',
             keepAll: true,
             alwaysLinkToLastBuild: true,
             allowMissing: false

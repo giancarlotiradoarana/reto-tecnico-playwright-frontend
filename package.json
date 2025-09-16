@@ -8,6 +8,7 @@
     "cucumber-test-dev": "cross-env ENV=dev BROWSER=chrome cucumber-js --config=config/cucumber.js",
     "cucumber-test-uat": "cross-env ENV=uat BROWSER=chrome cucumber-js --config=config/cucumber.js",
     "cucumber-report": "npx ts-node src/helper/report.ts && start test-results/reports/cucumber-report.html",
+    "cucumber-report:ci": "npx ts-node src/helper/report.ts",
     "import-xray-results": "node src/helper/integrations/jiraXrayIntegration.ts",
     "import-confluence-results-dev": "cross-env ENV=dev ts-node src/helper/integrations/confluenceIntegration.ts",
     "import-confluence-results-uat": "cross-env ENV=uat ts-node src/helper/integrations/confluenceIntegration.ts"
