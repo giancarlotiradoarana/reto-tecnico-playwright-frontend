@@ -38,6 +38,7 @@ pipeline {
                         }
 
                     } finally{
+                        bat 'rename test-results\\reports\\cucumber-report.html index.html'
                         publishReport();
                     }
                 }
@@ -50,7 +51,7 @@ pipeline {
         publishHTML(target: [
             reportName: 'Playwright Report',
             reportDir: 'test-results/reports',
-            reportFiles: 'cucumber-report.html',
+            reportFiles: 'index.html',
             keepAll: true,
             alwaysLinkToLastBuild: true,
             allowMissing: false
