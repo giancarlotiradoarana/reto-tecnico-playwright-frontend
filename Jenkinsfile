@@ -50,7 +50,7 @@ pipeline {
 
     def publishReport(){
         publishHTML(target: [
-            reportName: 'Playwriht Report',
+            reportName: 'Playwright Report',
             reportDir: 'test-results/reports',
             reportFiles: 'index.html',
             keepAll: true,
