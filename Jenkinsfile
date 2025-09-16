@@ -43,26 +43,7 @@ pipeline {
                 }
             }
         }
-         echo 'Generate Reports'
-         script {
-            sh(label: "Reports", script: """
-             ls reports
-             ls allure-results
-             npm run allure-report
-             ls allure-report
-             npm i cucumber-html-reporter
-             nmp run cucumber-report
-            """)
-         }
-
-        echo 'Publish Reports'
-
-        publishReport(
-            report: '/'+'/reports/',
-            reportFiles: 'cucumber-report.html',
-            reportName: 'Cucumber-report'
-        )
-
+        
     }
 }
 
