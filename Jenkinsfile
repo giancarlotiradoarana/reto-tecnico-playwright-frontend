@@ -46,12 +46,11 @@ pipeline {
         
     }
 }
-
     def publishReport(){
         publishHTML(target: [
             reportName: 'Playwright Report',
             reportDir: 'test-results/reports',
-            reportFiles: 'index.html',
+            reportFiles: 'cucumber-report.html',
             keepAll: true,
             alwaysLinkToLastBuild: true,
             allowMissing: false
