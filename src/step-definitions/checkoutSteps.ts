@@ -22,4 +22,3 @@ Then('debería ver un mensaje de confirmación de compra', async function () {
   await checkoutPage.validateOrderConfirmation();
 
 });
-
