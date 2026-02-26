@@ -31,3 +31,4 @@ export default class ProductsPage {
        await global.page.waitForTimeout(500);
    }
 }
+
