@@ -26,3 +26,4 @@ Then('debería ver el producto {string} listado en el carrito', async function (
   await cartPage.validateProductInCart(product);
   
 });
+
