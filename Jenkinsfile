@@ -16,7 +16,7 @@ pipeline {
                         sh ""
                     }
                     else{
-                        bat "npm install playwright"
+                        bat "npm install"
                         bat "npx playwright install"
                     }
                 }
