@@ -37,6 +37,7 @@ export default class LoginPage {
         await global.page.waitForTimeout(200);
     }
 
+    
     async validateLoginError(){
         await expect(global.page.locator(this.Elements.msgBlockedLbl)).toBeVisible({timeout:6000});
          //Estoy utilizando un pequeño tiempo ADICIONAL para ver el mensaje de Error
