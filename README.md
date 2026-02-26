@@ -162,7 +162,6 @@ npm run cucumber-report
  ```
 ---
 
-
 ## Informe sobre la estrategia de automatización y patrones utilizados.
 
 El informe se encuentra en el proyecto, en la siguente Ruta:
