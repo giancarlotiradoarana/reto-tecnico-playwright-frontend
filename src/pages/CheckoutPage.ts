@@ -44,3 +44,4 @@ export default class CheckoutPage {
         await global.page.waitForTimeout(500);
     }
 }
+
