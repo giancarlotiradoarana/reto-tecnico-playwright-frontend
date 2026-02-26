@@ -20,7 +20,7 @@ else {
 
 const TAG = "@chrome"
 const options = {
-  headless: false,
+  headless: true,
   timeout: 70000,
   slowMo: 100,
   ignoreHTTPSErrors: true,
