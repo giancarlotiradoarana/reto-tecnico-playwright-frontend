@@ -3,7 +3,7 @@ El proyecto de automatización fue desarrollado utilizando Playwright junto con 
 
 Se diseñó una suite de pruebas automatizadas para validar los flujos más importantes de la aplicación Sauce Demo, incluyendo:
 
-- Inicio de sesión exitoso con credenciales válidas
+- Inicio de sesión exitoso con credenciales válidas.
 
 - Inicio de sesión fallido con usuario bloqueado
 
