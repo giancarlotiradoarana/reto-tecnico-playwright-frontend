@@ -17,7 +17,6 @@ async function readCucumberJson() {
     } catch (error) {
         console.error('Error reading JSON file:', error);
         throw error;
-        
     }
 }
 
