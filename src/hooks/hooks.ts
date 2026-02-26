@@ -4,7 +4,6 @@ const os = require('os');
 import { getEnv } from "../helper/env/env";
 const { chromium, firefox, webkit } = require('@playwright/test')
 
-
 setDefaultTimeout(270000);
 //condición para ejecución con 1 solo login
 global.executionWith1Login = false;
