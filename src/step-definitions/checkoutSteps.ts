@@ -6,8 +6,7 @@ When('inicia el proceso de checkout', async function () {
   await this.checkoutPage.startCheckout();
 });
 
-When(
-  'completa sus datos: nombre {string}, apellido {string}, código postal {string}',
+When('completa sus datos: nombre {string}, apellido {string}, código postal {string}',
   async function (firstName: string, lastName: string, postalCode: string) {
     await this.checkoutPage.fillCheckoutInfo(firstName, lastName, postalCode);
   }
