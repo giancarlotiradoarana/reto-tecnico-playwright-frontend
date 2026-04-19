@@ -1,29 +1,21 @@
 import { Given, When, Then } from '@cucumber/cucumber';
-import  ProductsPage  from "../pages/ProductsPage";
-import  CartPage  from "../pages/CartPage";
-import  LoginPage  from "../pages/LoginPage";
-
-const loginPage = new LoginPage();
-const productsPage = new ProductsPage();
-const cartPage = new CartPage();
+import ProductsPage from "../pages/ProductsPage";
+import CartPage from "../pages/CartPage";
 
 When('agrega el producto {string} al carrito', async function (product: string) {
-  await productsPage.addProductToCart(product);
-
+  this.productsPage = new ProductsPage(this.page);
+  await this.productsPage.addProductToCart(product);
 });
 
 Then('el carrito debería mostrar {string} artículo', async function (count: string) {
-  await productsPage.validateCartCount(count);
-
+  await this.productsPage.validateCartCount(count);
 });
 
-When('navega al carrito de compras', async function ()  {
-  await productsPage.goToCart();
-
+When('navega al carrito de compras', async function () {
+  await this.productsPage.goToCart();
 });
 
 Then('debería ver el producto {string} listado en el carrito', async function (product: string) {
-  await cartPage.validateProductInCart(product);
-  
+  this.cartPage = new CartPage(this.page);
+  await this.cartPage.validateProductInCart(product);
 });
-
